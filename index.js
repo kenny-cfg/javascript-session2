@@ -1,8 +1,8 @@
 let result = null
 
 function addEmojies(message, emoji) {
-  let result = emoji + " " + message + " " + emoji
+  return emoji + " " + message + " " + emoji
 }
 
-addEmojies("hello", "WAVE")
+result = addEmojies("hello", "WAVE")
 console.log(result)
