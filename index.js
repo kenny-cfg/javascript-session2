@@ -1,5 +1,8 @@
-let message = "Hello"
-console.log(message)
-message = "Hi"
+let price = 100
+const discount = 20
 
-console.log(message)
+console.log("Price: " + price)
+
+price = price * ((100 - discount) / 100)
+
+console.log("New price: " + price)
