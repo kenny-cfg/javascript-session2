@@ -1,13 +1,17 @@
-function banner(message) {
+function banner(messageInsideFunction) {
   console.log("_________________________")
-  console.log(message)
+  console.log(messageInsideFunction)
   console.log("_________________________")
+  messageInsideFunction = "I am done with the message"
+  console.log(messageInsideFunction)
+  console.log('Message: ', message)
 }
 
-const bannerLambda = (message) => {
+const bannerLambda = (messageInsideLambdaFunction) => {
   console.log("_________________________")
-  console.log(message)
+  console.log(messageInsideLambdaFunction)
   console.log("_________________________")
+  console.log('Message: ', message)
 }
 
 const bannerFunction = function(message) {
@@ -16,5 +20,6 @@ const bannerFunction = function(message) {
   console.log("_________________________")
 }
 
-banner('Hello world')
-banner('Goodbye Mars')
+const message = "Hi"
+bannerLambda(message)
+console.log(message)
