@@ -1,20 +1,20 @@
-function banner() {
+function banner(message) {
   console.log("_________________________")
-  console.log("_________________________")
-}
-
-const bannerLambda = () => {
-  console.log("_________________________")
+  console.log(message)
   console.log("_________________________")
 }
 
-const bannerFunction = function() {
+const bannerLambda = (message) => {
   console.log("_________________________")
+  console.log(message)
   console.log("_________________________")
 }
 
-bannerFunction()
+const bannerFunction = function(message) {
+  console.log("_________________________")
+  console.log(message)
+  console.log("_________________________")
+}
 
-console.log('Hello world')
-
-bannerLambda()
+banner('Hello world')
+banner('Goodbye Mars')
