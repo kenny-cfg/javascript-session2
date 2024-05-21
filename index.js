@@ -1,6 +1,8 @@
-const response = prompt('Books vs movies')
+const response = prompt('Books vs movies vs games')
 if (response === 'books') {
   console.log('BOOKS')
-} else {
+} else if (response === 'movies') {
   console.log('FILMS')
+} else {
+  console.log('NO IDEA')
 }
