@@ -1,8 +1,20 @@
-const response = prompt('Books vs movies vs games')
-if (response === 'books') {
-  console.log('BOOKS')
-} else if (response === 'movies') {
-  console.log('FILMS')
-} else {
-  console.log('NO IDEA')
+function banner() {
+  console.log("_________________________")
+  console.log("_________________________")
 }
+
+const bannerLambda = () => {
+  console.log("_________________________")
+  console.log("_________________________")
+}
+
+const bannerFunction = function() {
+  console.log("_________________________")
+  console.log("_________________________")
+}
+
+bannerFunction()
+
+console.log('Hello world')
+
+bannerLambda()
